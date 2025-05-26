@@ -397,6 +397,14 @@ section {
   color: #ffc107;
 }
 
+#avaliacaoForm button {
+    background: #003366;
+}
+
+#avaliacaoForm button:hover {
+    background: #002244;
+}
+
 footer {
     position: absolute;
     bottom: 0;
