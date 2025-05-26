@@ -23,6 +23,7 @@
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#noticias">Notícias</a></li>
                 <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#avaliacoes">Avalie-nos</a></li>
                 <li><a href="#ouvidoria">Ouvidoria</a></li>
             </ul>
         </nav>
@@ -114,6 +115,41 @@
         </div>
     </section>
 
+    <section id="avaliacoes" class="container my-5">
+        <div class="row">
+            <div class="col-md-5">
+            <form id="avaliacaoForm" class="p-4 border rounded bg-light">
+                    <h2 class="mb-4">Deixe sua avaliação</h2>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input id="nomeAvaliacoes" type="text" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input id="emailAvaliacoes" type="email" class="form-control" required />
+                    </div>
+                    <label for="nota" class="form-label">Avaliação</label>
+                    <div id="estrelas" class="mb-3">
+                        <i data-value="1" class="bi bi-star"></i>
+                        <i data-value="2" class="bi bi-star"></i>
+                        <i data-value="3" class="bi bi-star"></i>
+                        <i data-value="4" class="bi bi-star"></i>
+                        <i data-value="5" class="bi bi-star"></i>
+                    </div>
+                    <input type="hidden" id="notaAvaliacoes" name="nota" />
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagemAvaliacoes" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Avaliação</button>
+            </form>
+        </div>
+        <div class="col-md-7">
+            <div id="listaAvaliacoes" class="border rounded p-3 bg-white" style="max-height: 600px; overflow-y: auto;"></div>
+            </div>
+        </div>
+    </section>
+
     <section id="ouvidoria">
         <div class="ouvidoria-container">
             <div class="ouvidoria-imagem">
@@ -151,42 +187,6 @@
             </div>
         </div>
     </section>
-
-<section id="avaliacoes" class="container my-5">
-  <div class="row">
-    <div class="col-md-5">
-      <form id="avaliacaoForm" class="p-4 border rounded bg-light">
-        <h2 class="mb-4">Deixe sua avaliação</h2>
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input id="nomeAvaliacoes" type="text" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input id="emailAvaliacoes" type="email" class="form-control" required />
-        </div>
-        <label for="nota" class="form-label">Avaliação</label>
-        <div id="estrelas" class="mb-3">
-          <i data-value="1" class="bi bi-star"></i>
-          <i data-value="2" class="bi bi-star"></i>
-          <i data-value="3" class="bi bi-star"></i>
-          <i data-value="4" class="bi bi-star"></i>
-          <i data-value="5" class="bi bi-star"></i>
-        </div>
-        <input type="hidden" id="notaAvaliacoes" name="nota" />
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea id="mensagemAvaliacoes" rows="4" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar Avaliação</button>
-      </form>
-    </div>
-    <div class="col-md-7">
-      <div id="listaAvaliacoes" class="border rounded p-3 bg-white" style="max-height: 600px; overflow-y: auto;">
-      </div>
-    </div>
-  </div>
-</section>
 
     <footer>
         <p>&copy; 2025 HBLEM. Todos os direitos reservados.</p>
