@@ -109,7 +109,7 @@ function mostrarAvaliacoes() {
     listaAvaliacoes.innerHTML = '';
 
     avaliacoes.forEach(a => {
-        const nomeFormatado = a.nome ? a.nome : 'Usuário';  // Exibe nome completo sem formatação
+        const nomeFormatado = a.nome ? a.nome : 'Usuário';
         const nota = typeof a.nota === 'number' ? a.nota : 0;
         const mensagem = a.mensagem || '';
 
@@ -127,7 +127,19 @@ function mostrarAvaliacoes() {
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const nome = document.getElementById('nomeAvaliacoes').value.trim();
+    let nome = document.getElementById('nomeAvaliacoes').value.trim();
+
+    const preposicoes = ['de', 'da', 'do', 'das', 'dos'];
+    nome = nome
+        .toLowerCase()
+        .split(' ')
+        .map((palavra, index) => {
+            return (preposicoes.includes(palavra) && index !== 0)
+                ? palavra
+                : palavra.charAt(0).toUpperCase() + palavra.slice(1);
+        })
+        .join(' ');
+
     const email = document.getElementById('emailAvaliacoes').value.trim();
     const nota = parseInt(notaInput.value);
     const mensagem = document.getElementById('mensagemAvaliacoes').value.trim();
