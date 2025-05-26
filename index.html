@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>⚕️HBLEM Itabuna</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-hblem.png" alt="Logo HBLEM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#ouvidoria">Ouvidoria</a></li>
+            </ul>
+        </nav>
+        <button class="menu-mobile">☰</button>
+    </header>
+
+    <section id="home">
+        <h1>Hospital de Base Luís Eduardo Magalhães</h1>
+        <p>Referência em saúde no sul da Bahia.</p>
+    </section>
+
+    <section id="sobre">
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="sobre-nos.jpg" alt="Imagem Sobre Nós">
+            </div>
+            <div class="sobre-texto">
+                <h5>SOBRE</h5>
+                <h2>O Hospital</h2>
+                <p>Fundado em 27 de setembro de 1998 em Itabuna, o Hospital de Base Luís Eduardo Magalhães, é uma instituição de gestão municipal, “Portas Abertas” para urgência e emergência e atendimento 100% SUS. <br><br>Administrada pela Fundação de Atenção à Saúde de Itabuna (FASI), a unidade hospitalar é considerada como um dos mais importantes equipamentos públicos de saúde do interior da Bahia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico servico-emergencia">
+                <h3>Emergência 24h</h3>
+                <p>Atendimento de urgência e emergência.</p>
+            </div>
+            <div class="servico servico-cirurgias">
+                <h3>Cirurgias</h3>
+                <p>Procedimentos cirúrgicos de alta complexidade.</p>
+            </div>
+            <div class="servico servico-exames">
+                <h3>Exames</h3>
+                <p>Diagnóstico por imagem e laboratorial.</p>
+            </div>
+            <div class="servico servico-farmacia">
+                <h3>Farmácia</h3>
+                <p>Dispensação e orientação no uso de medicamentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <h2>Notícias</h2>
+        <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="noticia">
+                        <p>
+                            Agora os usuários podem avaliar seu atendimento diretamente em nosso site com o novo sistema de avaliação! Essa funcionalidade permite que os visitantes deem notas e compartilhem suas opiniões, ajudando a melhorar a qualidade das informações oferecidas. A ferramenta é simples, intuitiva e já está disponível para todos os usuários.
+                            <br><br>Para sugestões detalhadas e críticas em relação ao atendimento especializado, a ouvidoria também continua disponível para uso. Aguardamos o seu feedback!
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="noticia">
+                        <p>
+                            A Prefeitura de Itabuna, por meio da Fundação de Atenção à Saúde de Itabuna (FASI), inicia neste fim de semana uma importante ação para ampliar a realização de cirurgias eletivas no Hospital de Base Luís Eduardo Magalhães (HBLEM).
+                            <br><br>A ação que foi idealizada e viabilizada pelo prefeito Augusto Castro, tem como objetivo acelerar os procedimentos cirúrgicos e reduzir as filas de espera de pacientes do Sistema Único de Saúde (SUS), beneficiando tanto Itabuna quanto municípios pactuados da região.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="noticia">
+                        <p>
+                            O Hospital de Base Luís Eduardo Magalhães (HBLEM) foi ampliado e a nova estrutura foi entregue nesta sexta-feira (14), pelo governador Jerônimo Rodrigues, acompanhado do ministro da Casa Civil, Rui Costa, e da secretária da Saúde, Roberta Santana.<br><br>A unidade, referência macrorregional para 22 municípios da região, agora conta com mais 20 leitos de UTI, seis novas salas cirúrgicas, adequação da área de imagem com a implantação de um novo tomógrafo e raio-X, e a ampliação da emergência, que passa a contar com oito leitos de observação, três leitos de sala vermelha e quatro leitos de sala amarela.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="localizacao-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8993928901023!2d-39.27868358448918!3d-14.79363398967225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x736d8b8c8f6f5b%3A0x6d1c3e0b6a0b9b5c!2sHospital%20de%20Base%20Lu%C3%ADs%20Eduardo%20Magalh%C3%A3es!5e0!3m2!1spt-BR!2sbr!4v1618350401234!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="ouvidoria">
+        <div class="ouvidoria-container">
+            <div class="ouvidoria-imagem">
+                <img src="ouvidoria.png" alt="Imagem Ouvidoria">
+            </div>
+            <div class="ouvidoria-formulario">
+                <h5>OUVIDORIA</h5>
+                <h2>Fale conosco</h2>
+                <form class="ouvidoria-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nomeOuvidoria" placeholder="Digite o seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="emailOuvidoria" placeholder="Digite seu melhor e-mail" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefoneOuvidoria" placeholder="00 00000-0000" maxlength="15" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assuntoOuvidoria" placeholder="Digite o assunto" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagemOuvidoria" placeholder="Digite a sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit">ENVIAR</button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+<section id="avaliacoes" class="container my-5">
+  <div class="row">
+    <div class="col-md-5">
+      <form id="avaliacaoForm" class="p-4 border rounded bg-light">
+        <h2 class="mb-4">Deixe sua avaliação</h2>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input id="nomeAvaliacoes" type="text" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input id="emailAvaliacoes" type="email" class="form-control" required />
+        </div>
+        <label for="nota" class="form-label">Avaliação</label>
+        <div id="estrelas" class="mb-3">
+          <i data-value="1" class="bi bi-star"></i>
+          <i data-value="2" class="bi bi-star"></i>
+          <i data-value="3" class="bi bi-star"></i>
+          <i data-value="4" class="bi bi-star"></i>
+          <i data-value="5" class="bi bi-star"></i>
+        </div>
+        <input type="hidden" id="notaAvaliacoes" name="nota" />
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagemAvaliacoes" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar Avaliação</button>
+      </form>
+    </div>
+    <div class="col-md-7">
+      <div id="listaAvaliacoes" class="border rounded p-3 bg-white" style="max-height: 600px; overflow-y: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 HBLEM. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

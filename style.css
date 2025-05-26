@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 80px; /* altura do footer */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.sticky {
+    top: 0;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    padding: 10px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    background: #003366;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    background: #0033666a;
+}
+
+.menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    color: #003366;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 4rem 10%;
+}
+
+#home {
+    background: url('hospital.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 10%;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#home h1, #home p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px black;
+}
+
+#sobre {
+    padding: 4rem 10%;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sobre-texto {
+    flex: 2;
+    text-align: left;
+}
+
+.sobre-texto h5 {
+    color: #003366;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 20px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.servico {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.servico h3, .servico p {
+    position: relative;
+    z-index: 2;
+}
+
+.servico-emergencia {
+    background-image: url('emergencia.jpg');
+}
+
+.servico-cirurgias {
+    background-image: url('cirurgias.jpg');
+}
+
+.servico-exames {
+    background-image: url('exames.jpg');
+}
+
+.servico-farmacia {
+    background-image: url('farmacia.jpg');
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#noticias {
+    background: url('noticias.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 10%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#noticias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#noticias h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.carousel-inner {
+    height: 220px;
+    overflow-y: auto;
+    transition: height 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.noticia {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px black;
+    color: #fff;
+}
+
+#noticias .noticia {
+    background: none;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+}
+
+#carouselNoticias .carousel-control-prev,
+#carouselNoticias .carousel-control-next {
+    z-index: 3 !important;
+}
+
+#localizacao {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.localizacao-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.localizacao-container iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+    border: none;
+}
+
+#ouvidoria {
+    padding: 4rem 10%;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.ouvidoria-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ouvidoria-imagem {
+    flex: 1;
+}
+
+.ouvidoria-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ouvidoria-formulario {
+    flex: 2;
+}
+
+.ouvidoria-formulario h5 {
+    color: #003366;
+}
+
+.ouvidoria-formulario h2 {
+    margin-bottom: 20px;
+}
+
+.ouvidoria-form {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.ouvidoria-form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ouvidoria-form button:hover {
+    background: #002244;
+}
+
+
+.form-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#estrelas i {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ccc;
+  margin-right: 0.3rem;
+  transition: color 0.3s;
+}
+
+#estrelas i.bi-star-fill {
+  color: #ffc107;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .servico {
+        flex: 1 1 100%;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ouvidoria-container {
+        flex-direction: column;
+    }
+
+    .ouvidoria-imagem img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .servicos-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        padding: 0;
+    }
+}
