@@ -12,7 +12,7 @@ body {
     position: relative;
     min-height: 100vh;
     margin: 0;
-    padding-bottom: 80px; /* altura do footer */
+    padding-bottom: 80px;
 }
 
 header {
@@ -385,6 +385,17 @@ section {
     border: 1px solid #f5c6cb;
 }
 
+#listaAvaliacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+}
+
+#listaAvaliacoes > div {
+    margin: 0;
+}
+
 #estrelas i {
   cursor: pointer;
   font-size: 1.8rem;
@@ -454,6 +465,20 @@ footer {
 
     .ouvidoria-imagem img {
         display: none;
+    }
+    
+    #listaAvaliacoes {
+        grid-template-columns: 1fr !important;
+    }
+
+    #avaliacoes .row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #avaliacoes .col-md-5, #avaliacoes .col-md-7 {
+        width: 100%;
     }
 }
 
