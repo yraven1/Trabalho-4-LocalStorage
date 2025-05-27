@@ -90,6 +90,7 @@ function atualizarEstrelas(valor) {
 
 if (!localStorage.getItem('avaliacoes')) {
     const exemplos = [
+        { nome: "Alda Almeida da Silva", email: "Aldasilva13@gmail.com", nota: 5, mensagem: "Foi muito bom as enfermeiras os médicos até os pacientes e os acompanhante são todos prestativo." },
         { nome: "Carlos Eduardo Costa Neto", email: "carloseduardo123@hotmail.com", nota: 3, mensagem: "O tempo de espera é muito estressante não há nenhum acompanhamento nesse período é desrespeitoso para o doente e o acompanhe que não pode entrar fica de fora sem informação nenhuma da situação do paciente." },
         { nome: "Maria dos Santos Silva Costa", email: "mariasilvacosta@hotmail.com", nota: 5, mensagem: "O hospital está ótimo. Lá não é açougue, como o povo da língua grande fala. Ótimo atendimento. Um SALVE para a equipe do Dr. Danilo, parabéns a todos. Só Deus para lhes pagarem." },
         { nome: "Luís Guilherme Souza Alves", email: "guisouza@hotmail.com", nota: 5, mensagem: "Hospital foi recentemente ampliado para atendimento aos municípios. 20 novas UTIs, 240 leitos com novos equipamentos. Foram instalados em uma moderna estrutura." }
